@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            color: #333333;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 20px 0;
+        }
+        .community-section {
+            border-top: 1px solid #dddddd;
+            margin-top: 20px;
+            padding-top: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .community-section img {
+            max-width: 40%;
+            margin-right: 20px;
+        }
+        .community-section .text-content {
+            max-width: 60%;
+        }
+        .unsubscribe {
+            font-size: 12px;
+            color: #777777;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .unsubscribe a {
+            color: #FF0000;
+            text-decoration: none;
+        }
+        .social-icons {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+        }
+        .logo img {
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Monthly Newsletter</h1>
+        </div>
+        <div class="content">
+            <img src="https://res.cloudinary.com/du3nn2bux/image/upload/v1719566850/men_zhergy.jpg" alt="Men Image" style="width: 100%; height: auto;">
+            <h1>Hello, {{ name }}</h1>
+            <p>Welcome to our monthly newsletter!</p>
+            <p>Stay tuned for updates and more information.</p>
+            <a href="http://example.com" class="button">Visit Website</a>
+        </div>
+        <div class="community-section">
+            <img src="https://res.cloudinary.com/du3nn2bux/image/upload/v1719566849/community_aorrdz.png" alt="Community Image">
+            <div class="text-content">
+                <h2>Django Community Website</h2>
+                <p>Have you checked out <a href="http://example.com" target="_blank">Awesome Pixx</a> yet? New Django features will be added regularly.</p>
+                <p>Launching soon:</p>
+                <ul>
+                    <li>Login with Google and X</li>
+                    <li>Stripe Implementation</li>
+                    <li>Image & Caption Game</li>
+                    <li>AI</li>
+                </ul>
+                <p>Subscribe to my <a href="http://youtube.com" target="_blank">YouTube channel</a> so you don’t miss it!</p>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Thanks for Being Awesome! 😎</h2>
+            <p>Thanks for your likes, subs, comments and support! Your engagement makes this community great. Thanks for being a part of it. 🥰 Stay curious and happy coding!</p>
+        </div>
+        <div class="social-icons">
+            <a href="http://instagram.com"><img src="https://res.cloudinary.com/du3nn2bux/image/upload/v1719566848/instagram_xrvmpk.png" alt="Instagram"></a>
+            <a href="http://twitter.com"><img src="https://res.cloudinary.com/du3nn2bux/image/upload/v1719566849/twitterx_hgur7r.png" alt="Twitter"></a>
+            <br>
+            <a href="http://example.com" class="logo"><img src="https://res.cloudinary.com/du3nn2bux/image/upload/v1719566850/sand_bir1mk.jpg" alt="Website"></a>
+        </div>
+        <div class="unsubscribe">
+            If you no longer wish to receive this newsletter, you can <a href="http://localhost:8000/profile/settings/" target="_blank">unsubscribe here</a>.
+        </div>
+    </div>
+</body>
+</html>
